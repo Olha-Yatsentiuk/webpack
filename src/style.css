@@ -1,12 +1,10 @@
 body {
-    color:coral;
-    font-size: 80px;
-    background: url('./coffee.jpg');
-  }
-  div {
-      position: absolute;
-      top: 27%;
-      left: 20%;
-  }
-
-  
+  color: coral;
+  font-size: 80px;
+  background: url("./coffee.jpg");
+}
+div {
+  position: absolute;
+  top: 27%;
+  left: 20%;
+}
