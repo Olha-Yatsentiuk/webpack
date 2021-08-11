@@ -1,0 +1,10 @@
+const dev = require('./webpack.dev.js');
+const prod = require('./webpack.prod.js');
+
+module.exports = (env, argv) => {
+    if (argv.mode === 'development') {
+        return dev;
+    } else {
+        return prod;
+    }
+};

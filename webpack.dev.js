@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
+const path = require('path');
 const PrettierPlugin = require("prettier-webpack-plugin");
-
 
 module.exports = merge(common, {
   mode: 'development',
@@ -12,29 +12,17 @@ module.exports = merge(common, {
   },
 
   plugins: [
-    new PrettierPlugin()
-  ],
-
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        options: {
-          cache: true,
-        },
-      },
-    ],
-  },
-
- 
-
-})
-
-
-
-
+        new PrettierPlugin({
+            printWidth: 80,
+            tabWidth: 2,
+            useTabs: false,
+            semi: true,
+            encoding: 'utf-8',
+            extensions: [ ".js", ".ts" ]
+        })
+    ]
+});
+console.log('dev')
 
   
  
