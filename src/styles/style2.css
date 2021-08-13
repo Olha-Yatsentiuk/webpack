@@ -1,0 +1,11 @@
+@import url('../components/header/header');
+@import url('../components/stories/stories');
+@import url('../components/footer/footer');
+@import url('./reset');
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+} 

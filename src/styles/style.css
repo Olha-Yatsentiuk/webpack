@@ -1,0 +1,17 @@
+@import url('../components/header/header');
+@import url('../components/main/main');
+@import url('../components/species/species');
+@import url('../components/footer/footer');
+@import url('./reset');
+
+
+.wrapper {
+    padding: 50px 25px;
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+} 

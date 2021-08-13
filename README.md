@@ -1,1 +1,1 @@
-# webpack
+# BEM in action
