@@ -1,1 +1,0 @@
-(self.webpackChunkbem=self.webpackChunkbem||[]).push([[552],{191:()=>{const e=document.querySelector(".icon"),s=document.querySelector(".menu");e.addEventListener("click",(()=>{e.classList.toggle("open"),s.classList.toggle("hidden")}))},24:(e,s,c)=>{"use strict";c(191)}},e=>{e(e.s=24)}]);
