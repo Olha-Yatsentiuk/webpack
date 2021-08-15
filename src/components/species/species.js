@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 
-fetch('./story/species.json')
+fetch('./species.json')
   .then((response) => response.json())
   .then((json) => {
     setTimeout(() => {

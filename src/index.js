@@ -1,5 +1,5 @@
 // styles
-import '@/styles/style.css';
+import '@/styles/style.scss';
 
 // header
 import {} from '@/components/header/header';

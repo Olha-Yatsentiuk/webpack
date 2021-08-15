@@ -9,8 +9,8 @@ const paths = require('./paths');
 module.exports = {
   // entry: [paths.src + '/main.js'],
   entry: {
-    index: [paths.src + '/main.js'],
-    stories: [paths.src + '/js/storiesPage.js'],
+    index: [paths.src + '/index.js'],
+    stories: [paths.src + '/pages/storiesPage.js'],
   },
 
   output: {
@@ -38,7 +38,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'pages/index2.html',
       template: paths.src + '/pages/template2.pug',
-      chunks: ['hobby'],
+      chunks: ['story'],
     }),
 
     new PrettierPlugin(
