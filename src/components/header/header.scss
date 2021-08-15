@@ -1,11 +1,22 @@
+$blue: #22a6f3e5;
+
+@mixin flex{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex2{
+  display: flex;
+  justify-content: space-around;
+}
+
 .header {
-    background-color:#22a6f3e5;
+    background-color:$blue;
     position: relative;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
+    @include flex;
 }
 
 .menu {
@@ -15,7 +26,7 @@
     width: 100%;
     height: 100vh;
     z-index: 2;
-    background-color: #22a6f3e5;
+    background-color: $blue;
 }
 
 .menu__item {
@@ -140,8 +151,7 @@
       position: static;
       top: 0;
       height: 50px;
-      background-color: #22a6f3e5;
-      display: flex;
-      justify-content: space-around;
+      background-color: $blue;
+      @include flex2;
     }
 } 

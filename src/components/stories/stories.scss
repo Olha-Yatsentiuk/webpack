@@ -1,15 +1,21 @@
-.stories {
+@mixin flex3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: top;
-   
+    align-items: center;
+}
+.stories {
+    @include flex3
 }
 
 .story {
     width: 450px;
     padding: 30px 0;
+    @media screen and (min-width: 1000px) {
+            width: 400px;
+            padding: 30px 0;
+        }
 }
 
 .story__name {
@@ -36,21 +42,10 @@
 
 .story__image {
     width:450px;
-}
 
-@media screen and (min-width: 1000px) {
-    .stories {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .story {
-        width: 400px;
-        padding: 30px 0;
-    }
-    .story__image {
+    @media screen and (min-width: 1000px) {
         width:400px;
+        }
     }
-}
+
+
