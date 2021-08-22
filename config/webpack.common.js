@@ -9,7 +9,6 @@ const paths = require('./paths');
 module.exports = {
   entry: {
     index: [paths.src + '/index.js'],
-    stories: [paths.src + '/pages/page2.js'],
     grid: [paths.src + '/js/grid.js'],
     flex: [paths.src + '/js/flex.js'],
   },
@@ -34,13 +33,6 @@ module.exports = {
       template: paths.src + '/template.pug',
       filename: 'index.html',
       chunks: ['index'],
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'webpack',
-      template: paths.src + '/pages/template2.pug',
-      filename: 'page2.html',
-      chunks: ['page2'],
     }),
 
     new HtmlWebpackPlugin({
