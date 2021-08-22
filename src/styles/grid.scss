@@ -3,13 +3,20 @@
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
 
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .grid {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1 fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 20px;
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(67, 11, 199);
   padding: 20px;
 
   &__picture {
@@ -20,5 +27,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+    }
+
+    &__item {
+      flex-direction: row;
+    }
   }
 }
