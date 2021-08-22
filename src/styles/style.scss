@@ -1,18 +1,5 @@
-@import "./reset.css";
+@import "./reset.scss";
 @import "../components/header/header.scss";
 @import "../components/main/main.scss";
 @import "../components/species/species.scss";
 @import "../components/footer/footer.scss";
-
-
-
-.wrapper {
-    padding: 50px 25px;
-}
-
-@media screen and (min-width: 1000px) {
-    .wrapper {
-        width: 1000px;
-        margin: 0 auto;
-    }
-} 

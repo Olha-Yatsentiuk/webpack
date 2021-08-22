@@ -1,6 +1,6 @@
-// styles
-import '@/styles/style.scss';
+import "@/styles/style.scss";
 
-// header
-import {} from '@/components/header/header';
-import {} from '@/components/species/species';
+import "@/components/header/header";
+import "@/components/main/main";
+import "@/components/species/species";
+import "@/components/footer/footer";

@@ -1,13 +1,13 @@
 /* eslint-disable indent */
 
-fetch('./species.json')
+fetch("./species.json")
   .then((response) => response.json())
   .then((json) => {
     setTimeout(() => {
-      const species = document.querySelector('.species');
+      const species = document.querySelector(".species");
       json.species.forEach((element) => {
         species.insertAdjacentHTML(
-          'beforeend',
+          "beforeend",
           `<div class="species__item">
               <li>${element.species} </br>
                Status: ${element.status}</li>
@@ -15,7 +15,7 @@ fetch('./species.json')
         );
       });
 
-      const loader = document.querySelector('.lds-spinner');
-      loader.style.display = 'none';
+      const loader = document.querySelector(".lds-spinner");
+      loader.style.display = "none";
     }, 2000);
   });

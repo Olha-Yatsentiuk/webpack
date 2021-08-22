@@ -1,12 +1,4 @@
-@import "./reset.css";
-@import "../components/header/header";
-@import "../components/stories/stories";
-@import "../components/footer/footer";
-
-
-@media screen and (min-width: 1000px) {
-    .wrapper {
-        width: 1000px;
-        margin: 0 auto;
-    }
-} 
+@import "./reset.scss";
+@import "../components/header/header.scss";
+@import "../components/stories/stories.scss";
+@import "../components/footer/footer.scss";

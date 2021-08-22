@@ -1,38 +1,35 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__title {
-    text-align: center;
-    font-size: 3rem;
-    padding: 10px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
 }
 
 .main__subtitle {
-    font-size: 2rem;
-    color:darkblue;
-    padding: 10px;
+  font-size: 2rem;
+  color: darkblue;
+  padding: 10px;
 }
 
 .main__general-info {
-    font-size: 1.5rem;
-    padding: 10px 0;
-    color:black;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  color: black;
 }
 
 .main__img {
-   width: 700px;
-   margin-left: 15%;
-   margin-top: -50px;
+  width: 700px;
+  margin-left: 15%;
+  margin-top: -50px;
 
-   @media screen and (max-width: 1000px) {
-            width: 500px;
-        left: 15%;
-    }
-
+  @media screen and (max-width: 1000px) {
+    width: 500px;
+    left: 15%;
+  }
 }
-
-
