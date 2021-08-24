@@ -3,34 +3,3 @@
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
 
-.flex {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 20px;
-  background-color: rgb(47, 255, 75);
-  padding: 20px;
-
-  &__item {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  &__picture {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1000px) {
-    &__item {
-      flex-direction: row;
-      gap: 20px;
-    }
-  }
-}
-
-.grid__picture {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
-}

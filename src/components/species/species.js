@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-
+/* eslint-disable quotes */
 fetch("./species.json")
   .then((response) => response.json())
   .then((json) => {
