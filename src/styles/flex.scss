@@ -1,4 +1,46 @@
 @import "./reset.scss";
-
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
+
+@mixin flexy {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+}
+
+.flex {
+  @include flexy;
+  background-color: rgb(47, 255, 75);
+  padding: 30px;
+
+  &__block {
+    @include flexy;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__photoname {
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1000px) {
+    &__block {
+      flex-flow: row nowrap;
+    }
+    &__photoname {
+      font-size: 1.5em;
+      color: rgb(55, 17, 160);
+      text-align: center;
+    }
+  }
+}
+
+.flex__photo {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
