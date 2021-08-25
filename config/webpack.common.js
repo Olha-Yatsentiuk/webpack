@@ -8,9 +8,10 @@ const paths = require('./paths');
 
 module.exports = {
   entry: {
-    index: [paths.src + '/index.js'],
+    index: [paths.src + '/js/index.js'],
     grid: [paths.src + '/js/grid.js'],
     flex: [paths.src + '/js/flex.js'],
+    description: [paths.src + '/js/description.js'],
   },
 
   output: {
@@ -30,20 +31,26 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'webpack',
-      template: paths.src + '/template.pug',
+      template: paths.src + '/pages/index.pug',
       filename: 'index.html',
       chunks: ['index'],
     }),
 
     new HtmlWebpackPlugin({
-      template: paths.src + '/flex.pug',
+      template: paths.src + '/pages/flex.pug',
       filename: 'flex.html',
       chunks: ['flex'],
     }),
 
     new HtmlWebpackPlugin({
       filename: 'grid.html',
-      template: paths.src + '/grid.pug',
+      template: paths.src + '/pages/grid.pug',
+      chunks: ['grid'],
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'description.html',
+      template: paths.src + '/pages/description.pug',
       chunks: ['grid'],
     }),
 

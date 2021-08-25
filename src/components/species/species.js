@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 /* eslint-disable quotes */
-fetch("./species.json")
+fetch("./species2.json")
   .then((response) => response.json())
   .then((json) => {
     setTimeout(() => {
