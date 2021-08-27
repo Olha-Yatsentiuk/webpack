@@ -3,18 +3,17 @@
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
 
-@mixin flex3 {
+.stories {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.stories {
-  @include flex3;
-}
 
 .story {
+  display: flex;
+  flex-direction: column;
   width: 450px;
   padding: 30px 0;
   @media screen and (min-width: 1000px) {
