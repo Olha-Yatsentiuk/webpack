@@ -1,0 +1,53 @@
+@import "./reset.scss";
+
+@import "../components/header/header.scss";
+@import "../components/footer/footer.scss";
+
+.stories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding: 30px 0;
+  @media screen and (min-width: 1000px) {
+    width: 400px;
+    padding: 30px 0;
+  }
+}
+
+.story__name {
+  font-size: 2rem;
+  text-align: center;
+  color: mediumblue;
+}
+.story__location {
+  font-size: 1.5rem;
+  text-align: center;
+  color: midnightblue;
+}
+.story__status {
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+}
+
+.story__description {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.story__image {
+  width: 450px;
+
+  @media screen and (min-width: 1000px) {
+    width: 400px;
+  }
+}

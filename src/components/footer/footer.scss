@@ -1,0 +1,19 @@
+$dark: darkcyan;
+.footer {
+  text-align: center;
+  background-color: $dark;
+}
+
+.footer__title {
+  padding: 20px;
+  font-size: 30px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
+  }
+}
+
+.footer__rights,
+.footer__info {
+  font-size: 20px;
+}
