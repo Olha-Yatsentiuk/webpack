@@ -1,14 +1,16 @@
 /* eslint-disable indent */
-fetch("./species2.json")
+
+fetch("./json/species.json")
   .then((response) => response.json())
   .then((json) => {
     setTimeout(() => {
       const species = document.querySelector(".species");
-      json.species.forEach((element, i) => {
+      json.species.forEach((element) => {
         species.insertAdjacentHTML(
           "beforeend",
           `<div class="species__item">
-              <li>${element.species} Status: ${element.status}</li>
+              <li>${element.species} </br>
+               Status: ${element.status}</li>
           </div>`
         );
       });

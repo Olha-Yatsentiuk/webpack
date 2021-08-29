@@ -1,0 +1,28 @@
+{
+  "species": [
+    {
+      "species": "CHIMPANZEE",
+      "status": "Endangered"
+    },
+
+    {
+      "species": "AXOLOTL",
+      "status": "Critically Endangered"
+    },
+
+    {
+      "species": "OKAPI",
+      "status": "Endangered"
+    },
+
+    {
+      "species": "POLAR BEAR",
+      "status": "Vulnerable"
+    },
+
+    {
+      "species": "RETICULATED GIRAFFE",
+      "status": "Vulnerable"
+    }
+  ]
+}
