@@ -1,0 +1,54 @@
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.article {
+  position: relative;
+  flex-basis: 30%;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  .new {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    display: inline-block;
+    border: solid 1px rgb(76, 238, 97);
+    border-radius: 15px;
+    padding: 0 10px;
+    color: rgb(76, 238, 97);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  &__creation-date {
+    font-size: 12px;
+    color: #333;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 5px;
+    }
+
+    i {
+      display: inline-block;
+      width: 100px;
+      height: 17px;
+      overflow: hidden;
+    }
+  }
+
+  &__body {
+    margin-top: 15px;
+  }
+}

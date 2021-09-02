@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        include ../components/header/header.pug
+
+block variables 
+  - var pageClass = 'articles-page'
+  - var json = require('../assets/static-data/articles.json') 
+  - var articles = json.sort(function (a, b) {
+  - return new Date(b.creationDate) - new Date(a.creationDate)
+  - })
+
+
+block content 
+  .container
+    .articles
+      each article, index in articles
+        div.article 
+          if index === 0
+            .new New  
+          h2= article.title
+          div.article__author 
+            span author: 
+            =article.author 
+          div.article__creation-date
+            span posted on: 
+            i= new Date(article.creationDate)
+          div.article__body
+            =article.body
+
+    include ../components/footer/footer.pug

@@ -8,10 +8,11 @@ const paths = require('./paths');
 
 module.exports = {
   entry: {
-    index: [paths.src + '/js/index.js'],
-    grid: [paths.src + '/js/grid.js'],
-    flex: [paths.src + '/js/flex.js'],
-    description: [paths.src + '/js/description.js'],
+    index: [paths.src + '/ts/index.ts'],
+    grid: [paths.src + '/ts/grid.ts'],
+    flex: [paths.src + '/ts/flex.ts'],
+    description: [paths.src + '/ts/description.ts'],
+    articles: [paths.src + '/ts/articles.ts'],
   },
 
   output: {
@@ -51,7 +52,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'description.html',
       template: paths.src + '/pages/description.pug',
-      chunks: ['grid'],
+      chunks: ['description'],
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'articles.html',
+      template: paths.src + '/pages/articles.pug',
+      chunks: ['articles'],
     }),
 
 
@@ -67,6 +74,8 @@ module.exports = {
       {test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource'},
 
       {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+
+      {test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/},
     ],
   },
 
